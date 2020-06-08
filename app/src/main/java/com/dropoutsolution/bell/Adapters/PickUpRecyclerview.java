@@ -1,6 +1,9 @@
 package com.dropoutsolution.bell.Adapters;
 
 import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,9 +12,13 @@ import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
+import com.dropoutsolution.bell.Activities.RestaurantsDetailsActivity;
 import com.dropoutsolution.bell.R;
 
 import java.util.ArrayList;
+
+import static android.content.ContentValues.TAG;
 
 
 public class PickUpRecyclerview extends RecyclerView.Adapter<PickUpRecyclerview.ViewHolder>{
@@ -32,8 +39,23 @@ public class PickUpRecyclerview extends RecyclerView.Adapter<PickUpRecyclerview.
     }
 
     @Override
-    public void onBindViewHolder(@NonNull PickUpRecyclerview.ViewHolder viewHolder, int i) {
+    public void onBindViewHolder(@NonNull PickUpRecyclerview.ViewHolder viewHolder, final int i) {
         viewHolder.imageView.setImageResource(Images.get(i));
+
+
+        Glide.with(context).load(Images.get(i)).into(viewHolder.imageView);
+
+        viewHolder.imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context , RestaurantsDetailsActivity.class);
+                Bundle bundle = new Bundle();
+                bundle.putString("img" , String.valueOf(Images.get(i)));
+                intent.putExtras(bundle);
+                Log.d(TAG, "images " + Images.get(i));
+                context.startActivity(intent);
+            }
+        });
     }
 
     @Override
