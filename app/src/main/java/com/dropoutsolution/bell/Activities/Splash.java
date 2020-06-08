@@ -21,7 +21,6 @@ public class Splash extends AppCompatActivity {
                 Intent gotomain = new Intent(Splash.this , LocationActivity.class);
                 startActivity(gotomain);
                 finish();
-
             }
         },3000);
     }

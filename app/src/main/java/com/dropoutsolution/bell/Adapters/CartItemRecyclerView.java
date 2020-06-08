@@ -1,6 +1,7 @@
 package com.dropoutsolution.bell.Adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.ContextMenu;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,6 +12,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.dropoutsolution.bell.Activities.RatefoodActivity;
 import com.dropoutsolution.bell.R;
 
 import java.util.ArrayList;
@@ -37,6 +39,12 @@ public class CartItemRecyclerView extends RecyclerView.Adapter<CartItemRecyclerV
     @Override
     public void onBindViewHolder(@NonNull final CartItemRecyclerView.ViewHolder holder, final int position) {
         holder.textView.setText(text.get(position));
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                context.startActivity(new Intent(context , RatefoodActivity.class));
+            }
+        });
     }
 
     @Override

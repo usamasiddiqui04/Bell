@@ -21,6 +21,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Activities.RatefoodActivity"></activity>
         <activity android:name=".Activities.LoginActivity" />
         <activity android:name=".Activities.AboutresActivity" />
         <activity android:name=".Activities.RestaurantsDetailsActivity" />

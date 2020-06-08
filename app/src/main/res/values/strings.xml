@@ -40,4 +40,7 @@
     <string name="zinger_burger">Zinger Burger</string>
     <string name="rs_650_00">Rs. 650.00</string>
     <string name="chappel_kabab_kadhi_bar_b_q"><![CDATA[Chappel Kabab Kadhi & Bar B Q]]></string>
+    <string name="thanks_for_rating">Thanks for rating</string>
+    <string name="food">Food</string>
+    <string name="timeliness">Timeliness</string>
 </resources>

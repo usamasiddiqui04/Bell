@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.RatefoodActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="15dp"
+            android:textSize="24sp"
+            android:id="@+id/food"
+            android:text="@string/thanks_for_rating">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/food"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="15dp"
+            android:textSize="18sp"
+            android:id="@+id/food2"
+            android:text="@string/food">
+        </TextView>
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="10dp"
+            app:layout_constraintTop_toBottomOf="@id/food2"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:id="@+id/userrating"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/userrating"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="15dp"
+            android:textSize="24sp"
+            android:id="@+id/howwas"
+            android:text="How was everything else">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/howwas"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="15dp"
+            android:textSize="18sp"
+            android:id="@+id/packaging"
+            android:text="Packaging"
+            android:layout_marginLeft="15dp">
+        </TextView>
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="10dp"
+            app:layout_constraintTop_toBottomOf="@id/packaging"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:id="@+id/packagingrate"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/packagingrate"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:textSize="18sp"
+            android:id="@+id/Rider"
+            android:text="@string/food">
+        </TextView>
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="10dp"
+            app:layout_constraintTop_toBottomOf="@id/Rider"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:id="@+id/Riderrate"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/Riderrate"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:textSize="18sp"
+            android:id="@+id/Timeliness"
+            android:text="@string/timeliness">
+        </TextView>
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="10dp"
+            app:layout_constraintTop_toBottomOf="@id/Timeliness"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:id="@+id/Timelinessrate"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/Timelinessrate"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="15dp"
+            android:textSize="24sp"
+            android:id="@+id/anything"
+            android:text="Anything else to add?">
+
+        </TextView>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:hint="Give your feedback...."
+            android:gravity="top"
+            android:padding="5dp"
+            android:id="@+id/edittextreview"
+            app:layout_constraintTop_toBottomOf="@id/anything"
+            android:background="@drawable/textreviewsback"
+            android:layout_margin="15dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:layout_constraintTop_toBottomOf="@id/edittextreview"
+            app:layout_constraintStart_toStartOf="@id/packagingrate"
+            android:layout_margin="15dp"
+            android:text="Done"
+            android:textColor="@color/white"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

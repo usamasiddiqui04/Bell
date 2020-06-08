@@ -44,7 +44,6 @@ public class RestaurantsReclyclerView extends RecyclerView.Adapter<RestaurantsRe
 
     @Override
     public void onBindViewHolder(@NonNull final RestaurantsReclyclerView.ViewHolder holder, final int position) {
-
         img = Images.get(position);
         Glide.with(context).load(Images.get(position)).into(holder.imageView);
 
