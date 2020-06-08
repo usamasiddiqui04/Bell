@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/group_divider">
+        <item android:id="@+id/myorder"
+            android:icon="@drawable/ic_baseline_menu_book_24"
+            android:title="@string/my_orders">
+        </item>
+
+        <item android:id="@+id/myprofile"
+            android:icon="@drawable/ic_baseline_person_24"
+            android:title="@string/my_profile">
+        </item>
+
+        <item android:id="@+id/myaddress"
+            android:icon="@drawable/ic_baseline_my_location_24"
+            android:title="@string/my_addresses">
+        </item>
+
+
+        <item android:id="@+id/helpcenter"
+            android:icon="@drawable/ic_baseline_help_24"
+            android:title="@string/help_center">
+        </item>
+
+        <item android:id="@+id/invitefriends"
+            android:icon="@drawable/ic_baseline_insert_invitation_24"
+            android:title="@string/invite_friends">
+        </item>
+    </group>
+
+    <group android:id="@+id/group_divider2">
+        <item android:id="@+id/settings"
+            android:title="@string/settings"/>
+        <item android:id="@+id/termscondiditon"
+            android:title="@string/term_conditions_privacy"/>
+        <item android:id="@+id/logout"
+            android:title="@string/logout"/>
+
+    </group>
+
+</menu>

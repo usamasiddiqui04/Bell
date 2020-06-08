@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usama Ali"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="20dp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:id="@+id/username"
+        android:textSize="16sp"/>
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="20dp"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:id="@+id/userrating"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/username"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Jun 2, 2020"
+        android:textColor="#696969"
+        android:id="@+id/time"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/time"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="food was very yummy and fresh i must clear one thing in raita u must us fresh otherwise your service is fine."
+        android:textColor="#696969"
+        android:gravity="start"
+        android:layout_marginTop="5dp"
+        android:id="@+id/userreview"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toBottomOf="@id/userreview"
+        android:background="@android:color/darker_gray"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

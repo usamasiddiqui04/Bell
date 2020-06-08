@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Bell</string>
+    <string name="my_orders">My Orders</string>
+    <string name="my_profile">My Profile</string>
+    <string name="my_addresses">My Addresses</string>
+    <string name="help_center">Help Center</string>
+    <string name="invite_friends">Invite Friends</string>
+    <string name="settings">Settings</string>
+    <string name="term_conditions_privacy"><![CDATA[Term & conditions / Privacy]]></string>
+    <string name="logout">Logout</string>
+    <string name="usama_ali">Usama Ali</string>
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="finds_restaurants_near_you">Finds Restaurants near you</string>
+    <string name="please_allow_bell_access_to_your_location_to_find_restaurants_near_you">Please allow Bell access to your location to find restaurants near you</string>
+    <string name="all_restaurants">All Restaurant</string>
+    <string name="cheezious">Cheezious</string>
+    <string name="_4_1">4.1</string>
+    <string name="pakistani_pizza_cheeziious">Pakistani, Pizza, Cheeziious</string>
+    <string name="up_to_70_off">UP TO 70% OFF</string>
+    <string name="rs_75">RS. 75</string>
+    <string name="free_delivery">Free Delivery</string>
+    <string name="_25_nmin">25\nmin</string>
+    <string name="minimum">minimum</string>
+    <string name="free">Free</string>
+    <string name="delivery">Delivery</string>
+    <string name="find_something_you_like">Find something you like</string>
+    <string name="reorder">Reorder</string>
+    <string name="terms_conditions"><![CDATA[Terms & conditions]]></string>
+    <string name="data_policy">Data policy</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="delivery_fee">Delivery fee</string>
+    <string name="incl_vat">(incl. VAT)</string>
+    <string name="rs_0_00">Rs. 0.00</string>
+    <string name="rs_287_00">Rs. 287.00</string>
+    <string name="contact_info">Contact info</string>
+    <string name="usamshiekh33_gmail_com">usamshiekh33@gmail.com</string>
+    <string name="zinger_burger">Zinger Burger</string>
+    <string name="rs_650_00">Rs. 650.00</string>
+    <string name="chappel_kabab_kadhi_bar_b_q"><![CDATA[Chappel Kabab Kadhi & Bar B Q]]></string>
+</resources>
