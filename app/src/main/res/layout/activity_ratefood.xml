@@ -3,11 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".Activities.RatefoodActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
+        android:paddingBottom="30dp"
         android:layout_height="wrap_content">
 
         <TextView
@@ -16,7 +17,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_margin="15dp"
-            android:textSize="24sp"
+            android:textSize="22sp"
             android:id="@+id/food"
             android:text="@string/thanks_for_rating">
 
@@ -28,7 +29,7 @@
             app:layout_constraintTop_toBottomOf="@id/food"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_margin="15dp"
-            android:textSize="18sp"
+            android:textSize="16sp"
             android:id="@+id/food2"
             android:text="@string/food">
         </TextView>
@@ -47,7 +48,7 @@
             app:layout_constraintTop_toBottomOf="@id/userrating"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_margin="15dp"
-            android:textSize="24sp"
+            android:textSize="22sp"
             android:id="@+id/howwas"
             android:text="How was everything else">
 
@@ -60,7 +61,7 @@
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginTop="25dp"
             android:layout_marginStart="15dp"
-            android:textSize="18sp"
+            android:textSize="16sp"
             android:id="@+id/packaging"
             android:text="Packaging"
             android:layout_marginLeft="15dp">
@@ -83,7 +84,7 @@
             android:layout_marginTop="25dp"
             android:layout_marginStart="15dp"
             android:layout_marginEnd="15dp"
-            android:textSize="18sp"
+            android:textSize="16sp"
             android:id="@+id/Rider"
             android:text="@string/food">
         </TextView>
@@ -106,7 +107,7 @@
             android:layout_marginTop="25dp"
             android:layout_marginStart="15dp"
             android:layout_marginEnd="15dp"
-            android:textSize="18sp"
+            android:textSize="16sp"
             android:id="@+id/Timeliness"
             android:text="@string/timeliness">
         </TextView>
@@ -126,7 +127,7 @@
             app:layout_constraintTop_toBottomOf="@id/Timelinessrate"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_margin="15dp"
-            android:textSize="24sp"
+            android:textSize="22sp"
             android:id="@+id/anything"
             android:text="Anything else to add?">
 
@@ -148,9 +149,9 @@
             android:layout_height="wrap_content"
             android:background="@color/colorPrimary"
             app:layout_constraintTop_toBottomOf="@id/edittextreview"
-            app:layout_constraintStart_toStartOf="@id/packagingrate"
-            android:layout_margin="15dp"
+            app:layout_constraintStart_toStartOf="parent"
             android:text="Done"
+            android:layout_margin="15dp"
             android:textColor="@color/white"/>
 
 
